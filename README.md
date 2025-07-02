@@ -32,7 +32,6 @@ This project consists of two basic but functional HTML pages: `login.html` and `
   - ✔️ "Remember Me" checkbox on login page
   - ✔️ "Confirm Password" field on signup page
 
--
 
 ### 🚀 How to Use
 
