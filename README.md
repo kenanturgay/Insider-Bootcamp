@@ -1,22 +1,21 @@
-##Day-1-Html-Exercise
+
+    ##Day-1-Html-Exercise
+
     This project includes two basic HTML pages: a login form (`login.html`) and a signup form (`signup.html`). Users can switch between the two pages using internal links.
-    
-    ---
-    
+        
     ## 📄 Pages
     
-    ### `login.html`
-    - Email and password input fields (required)
-    - "Remember Me" checkbox
-    - Submit button
-    - Link to the signup page
-    
-    ### `signup.html`
-    - Full name, email, password, and confirm password fields (all required)
-    - Submit button
-    - Link to the login page
-    
-    ---
+        ### `login.html`
+        - Email and password input fields (required)
+        - "Remember Me" checkbox
+        - Submit button
+        - Link to the signup page
+        
+        ### `signup.html`
+        - Full name, email, password, and confirm password fields (all required)
+        - Submit button
+        - Link to the login page
+        
     
     ## 🚀 How to Use
     
