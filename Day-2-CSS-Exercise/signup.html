@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kayıt Ol</title>
+    <link rel="stylesheet" href="style.css" />
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Hesap Oluştur</h1>
+
+      <form action="">
+        <div>
+          <label for="name">Adı Soyadınız:</label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Ad ve Soyad Giriniz..."
+            required
+          />
+        </div>
+        <br />
+
+        <div>
+          <label for="email">E-posta:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="E-mail Giriniz..."
+            required
+          />
+        </div>
+        <br />
+        <div>
+          <label for="password">Şifre:</label><br />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Şİfre Giriniz..."
+            required
+          />
+        </div>
+        <br />
+        <div>
+          <label for="confirm-password">Şifreyi Onayla:</label><br />
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            placeholder="Şifreyi Tekrar Giriniz..."
+            required
+          />
+        </div>
+        <br />
+        <button type="submit">Kayıt Ol</button>
+
+        <p>Zaten Hesabınız Var Mı? <br /><a href="login.html">Giriş Yap</a></p>
+      </form>
+    </div>
+  </body>
+</html>
