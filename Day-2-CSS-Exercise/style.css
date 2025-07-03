@@ -15,17 +15,14 @@ body {
   align-items: center;
   background-color: white;
 
-  box-shadow: 0 8px 16px rgb(0, 0, 255, 0.2);
+  box-shadow: 0 8px 45px rgb(0, 0, 255, 0.9);
 
   border-radius: 8px;
 }
 
 form {
-  
-  
   display: flex;
   flex-direction: column;
-  
 }
 
 a {
@@ -74,6 +71,7 @@ button:hover {
 a {
   color: #1a73e8;
   text-decoration: none;
+  cursor: pointer;
 }
 
 a:hover {
