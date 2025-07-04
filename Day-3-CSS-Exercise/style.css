@@ -3,34 +3,76 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
   margin: 0;
-  padding: 20px;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 30px 20px 0 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  padding-bottom: 20px;
+  font-style: italic;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 1px 2px 8px #b3aaff;
+}
+
+.sold-out {
+  color: #e60023;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: line-through;
 }
 
 /* === Product Grid === */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4‑lü vitrin (≥1025 px) */
-  gap: 20px;
+  gap: 30px;
 }
 
 /* === Product Card === */
 .product-card {
+  max-width: 100%;
   position: relative; /* rozete yer aç */
   display: flex; /* içerikleri dikey hizala */
   flex-direction: column;
   justify-content: space-between; /* butonu alta sabitle */
-  background-color: #bd99f9;
-  border: 1px solid #d23cd0;
+  background-color: #f1f4f5;
+  border: 1px solid #7079ef;
   box-shadow: 0 8px 15px rgba(0, 0, 255, 0.7);
-  border-radius: 10px;
-  padding: 16px;
+  border-radius: 8px;
+  padding: 1px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* hover yumuşatma */
 }
 
 .product-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 20px rgba(0, 0, 255, 0.8);
+    transform: translateY(-10px);
+    animation: rotate-shadow 1s linear infinite;
+}
+
+@keyframes rotate-shadow {
+    0% {
+        box-shadow: 0 12px 20px rgba(240, 5, 5, 0.8);
+    }
+    25% {
+        box-shadow: 12px 0 20px rgba(240, 5, 5, 0.8);
+    }
+    50% {
+        box-shadow: 0 -12px 20px rgba(240, 5, 5, 0.8);
+    }
+    75% {
+        box-shadow: -12px 0 20px rgba(240, 5, 5, 0.8);
+    }
+    100% {
+        box-shadow: 0 12px 20px rgba(240, 5, 5, 0.8);
+    }
 }
 
 /* === Product Image === */
@@ -45,7 +87,7 @@ body {
 .product-info {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+
   margin-top: 12px;
 }
 
@@ -61,7 +103,7 @@ body {
 
 .product-info button {
   padding: 10px 14px;
-  background-color: #5a00ff;
+  background-color: #327ef0;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -71,11 +113,11 @@ body {
 }
 
 .product-info button:hover {
-  background-color: #3e00b3;
+  background-color: #0006b3;
 }
 
 .product-info button:disabled:hover {
-  background-color: #5a00ff;
+  background-color: #327ef0;
 }
 
 /* === "Tükendi" Rozeti (Opsiyonel) === */
@@ -96,17 +138,38 @@ body {
   .product-grid {
     grid-template-columns: repeat(3, 1fr); /* Tablet yatay */
   }
+  h1 {
+    font-size: 2rem;
+  }
+  .product-info h3 {
+    margin: 0 0 8px;
+    font-size: 1.1rem;
+  }
 }
 
 @media (max-width: 768px) {
   .product-grid {
     grid-template-columns: repeat(2, 1fr); /* Büyük telefon / dikey tablet */
   }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .product-info h3 {
+    margin: 0 0 8px;
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 480px) {
   .product-grid {
     grid-template-columns: 1fr; /* Mobil tek sütun */
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+  .product-info h3 {
+    margin: 0 0 8px;
+    font-size: 0.9rem;
   }
 }
 
