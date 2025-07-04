@@ -22,12 +22,7 @@ h1 {
   text-shadow: 1px 2px 8px #b3aaff;
 }
 
-.sold-out {
-  color: #e60023;
-  font-weight: bold;
-  font-size: 1.2rem;
-  text-decoration: line-through;
-}
+.sold-out
 
 /* === Product Grid === */
 .product-grid {
