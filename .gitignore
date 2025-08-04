@@ -1,2 +1,5 @@
 # Don't include PDF files in the repository
 *.pdf
+
+# Don't include .docx files in the repository
+*.docx
