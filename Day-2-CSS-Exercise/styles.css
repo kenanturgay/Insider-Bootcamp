@@ -1,13 +1,12 @@
 :root {
   --primary-color: #007bff;
   --primary-hover: #0056b3;
-  --background-color: #a8a8a8;
-  --text-color: #333;
+  --background-color: #838383;
+  --text-color: #0432e7;
   --white: #fff;
   --border-color: #ccc;
-  --shadow-color: rgba(0, 0, 0, 0.1);
-  --green-shadow: rgb(8, 232, 23);
-  --body-font-family: cursive;
+  --container-shadow: rgb(10, 29, 235);
+  --form-shadow: rgb(8, 232, 23);
 }
 
 * {
@@ -17,7 +16,7 @@
 }
 
 body {
-  font-family: var(--body-font-family);
+  font-family: Arial, sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
   width: 100%;
@@ -32,8 +31,7 @@ body {
   max-width: 400px;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 2px 5px var(--shadow-color);
-  background: var(--white);
+  box-shadow: 0 0px 5px var(--container-shadow);
 }
 
 h1 {
@@ -46,7 +44,7 @@ form {
   margin-top: 20px;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 0px 15px var(--green-shadow);
+  box-shadow: 0 0px 10px var(--form-shadow);
 }
 
 label {
