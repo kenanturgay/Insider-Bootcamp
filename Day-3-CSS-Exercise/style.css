@@ -22,8 +22,6 @@ h1 {
   text-shadow: 1px 2px 8px #b3aaff;
 }
 
-.sold-out
-
 /* === Product Grid === */
 .product-grid {
   display: grid;
@@ -38,9 +36,9 @@ h1 {
   display: flex; /* içerikleri dikey hizala */
   flex-direction: column;
   justify-content: space-between; /* butonu alta sabitle */
-  background-color: #f1f4f5;
+  background-color: #a4a4a4;
   border: 1px solid #7079ef;
-  box-shadow: 0 8px 15px rgba(0, 0, 255, 0.7);
+  box-shadow: 0 0px 9px rgba(165, 165, 166, 0.7);
   border-radius: 8px;
   padding: 1px;
   text-align: center;
@@ -48,26 +46,9 @@ h1 {
 }
 
 .product-card:hover {
-    transform: translateY(-10px);
-    animation: rotate-shadow 1s linear infinite;
-}
-
-@keyframes rotate-shadow {
-    0% {
-        box-shadow: 0 12px 20px rgba(240, 5, 5, 0.8);
-    }
-    25% {
-        box-shadow: 12px 0 20px rgba(240, 5, 5, 0.8);
-    }
-    50% {
-        box-shadow: 0 -12px 20px rgba(240, 5, 5, 0.8);
-    }
-    75% {
-        box-shadow: -12px 0 20px rgba(240, 5, 5, 0.8);
-    }
-    100% {
-        box-shadow: 0 12px 20px rgba(240, 5, 5, 0.8);
-    }
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+  z-index: 2;
 }
 
 /* === Product Image === */
